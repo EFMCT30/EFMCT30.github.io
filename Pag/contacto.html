@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PhoneHouses web - Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/Principal.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/Logo_Phonehouses.png">
+</head>
+<body>
+
+ 
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>PHONE<b>HOUSES</b></h1>
+            </div>
+
+            <div class="menu" id="lateral">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"> <i class="fas fa-home"></i>INICIO</a></li>
+                        <li><a href="Nosotros.html"><i class="fas fa-file-alt"></i>NOSOTROS</a></li>
+                        <li><a href="productos.html"> <i class="fas fa-shopping-cart"></i>PRODUCTOS</a></li>
+                        <li class="menu-selected"><a href="contacto.html"  class="text-menu-selected"> <i class="fas fa-headset"></i>CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué celular estás buscando?">
+    </div>
+
+    <ul id="box-search">
+        <li><a href="productos.html"><i class="fas fa-search"></i>IPHONE</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>SAMSUNG</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>HUAWEI</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>XIAOMI</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>MOTOROLA</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>COMPLEMENTOS</a></li>
+        <li><a href="Nosotros.html"><i class="fas fa-search"></i>HISTORIA</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>PRODUCTOS</a></li>
+        <li><a href="Nosotros.html"><i class="fas fa-search"></i>NOSOTROS</a></li>
+        <li><a href="terminocondi.html"><i class="fas fa-search"></i>TÉRMINOS</a></li>
+        <li><a href="terminocondi.html"><i class="fas fa-search"></i>PRIVACIDAD</a></li>
+        <li><a href="libroRecla.html"><i class="fas fa-search"></i>LIBRO RECLAMACIONES</a></li>
+        <li><a href="../index.html"><i class="fas fa-search"></i>SERVICIOS</a></li>
+        <li><a href="../index.html"><i class="fas fa-search"></i>MARCAS</a></li>
+        <li><a href="garantia.html"><i class="fas fa-search"></i>GARANTIAS</a></li>
+        <li><a href="contacto.html"><i class="fas fa-search"></i>CONTACTO</a></li>
+        <li><a href="politicomerciales.html"><i class="fas fa-search"></i>POLÍTICAS</a></li>
+        <li><a href="contacto.html"><i class="fas fa-search"></i>CONTACTAR</a></li>
+        <li><a href="contacto.html"><i class="fas fa-search"></i>MENSAJE</a></li>
+        <li><a href="productos.html"><i class="fas fa-search"></i>CELULARES</a></li>
+    </ul><!--box-search-->
+
+    <div id="cover-ctn-search"></div>
+
+    <div class="container-all" id="move-content">
+         
+        <!-------Carusel o Portada--------->
+        <div class="slide-contenedor">
+            <div class="miSlider fade">
+                <img src="../img/banner01.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img/banner02.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img//banner03.jpg" alt="">
+            </div>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+        </div><!--slide-contenedor-->
+
+        <!------ TRABAJAR DENTRO DE ESTA ZONA DE ABAJO------->
+        <div class="container-contacto">
+            <main>
+                <h2 class="titulo-contacto">FORMULARIO DE CONTACTO</h2>
+                <form action="" class="formulario" id="formulario">
+
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre no puede contener números. Solo puede contener letras y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Apellido -->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El apellido no puede contener números. Solo puede contener letras y guion bajo.</p>
+                    </div>
+    
+                    <!-- Grupo: Correo Electronico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+        
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="ejem :971680273">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label"></label>
+                        <div class="formulario__grupo-input">
+                            <label>Déjanos tu comentario [Máximo 100 caracteres] (Opcional)</label>
+                            <textarea style = "resize: none" id = "comentario" placeholder = "Escribir su comentario aquí" rows = "10" cols = "65" ></textarea>
+                            <p>Caracteres Restantes: <span id = "restante">100</span></p>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div><br>
+      
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los
+                            <a href="terminocondi.html" target="_Blank">Terminos y Condiciones</a>
+                        </label>
+                    </div>
+        
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito " id="formulario__mensaje-exito"><i class="fas fa-check-circle">Formmulario enviado exitosamente</i></p>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <!------ TRABAJAR DENTRO DE ESTA ZONA DE ARRIBA------->
+
+        <!-------Boton------>
+        <div id="boton-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <!--Redes sociales--->
+        <div class="container-redes">
+            <a href="https://api.whatsapp.com/send?phone=+51971680273&text=Hola, vi esta publicación" target="_blank">
+                <img src="../img/icon-whatsapp.png" title="Enviar Mensaje de WhatsApp"  alt="">
+            </a>
+        </div>
+        
+        <!------Footer------->
+        <div class="container__footer">
+
+            <footer>
+                <div class="logo-footer">
+                    <br>
+                    <img src="../img/Logo_Phonehouses.png" alt="">
+                </div>
+
+                <div class="pri__container__footer">
+
+                    <div class="box__footer">
+                        <h2>SERVICIO AL CLIENTE</h2>
+                        <a href="../Pag/terminocondi.html">Términos y condiciones</a>
+                        <a href="../Pag/politicomerciales.html">Politicas Comerciales</a>
+                        <a href="../Pag/garantia.html">Garantía</a>
+                    </div>
+                    <div class="box__footer">
+                        <h2>COMPAÑIA</h2>
+                        <a href="../index.html">Inicio</a>
+                        <a href="../Pag/Nosotros.html">Nosotros</a>
+                        <a href="../Pag/productos.html">Productos</a>
+                        <a href="../Pag/contacto.html">Contacto</a>
+                        <a href="../Pag/terminocondi.html">Politica de privacidad</a>                                                
+                    </div>
+
+                    <div class="box__footer">
+                        <h2>REDES SOCIALES</h2>
+                        <a href="https://es-la.facebook.com/" target="_Blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="https://twitter.com/iniciarsesion?lang=es" target="_Blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+                        <a href="https://www.linkedin.com/login/es" target="_Blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <a href="https://www.instagram.com/" target="_Blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+                    </div>
+
+                    <div class="box__footer">
+                        <h2>DATOS DE CONTACTO</h2>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. La Marina 1632 - San Miguel, Perú</p>
+                        <p><i class="fas fa-envelope"></i> PhoneHouse.pe@gmail.com</p>
+                        <p><i class="fas fa-envelope"></i> SoportePhoHouse.pe@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i><b> +51 971680273</b></p>
+                        <p><i class="fas fa-phone-alt"></i><b>  01 2633376</b></p>
+                        <img class="metodos-footer" src="../img/metodospagos_footer.png" alt="">
+                    </div>
+
+                </div><!--"pri-container-footer-->
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2021 <b>PhoneHouses</b></p>
+                </div>
+            </footer>
+       </div>
+    </div><!--container-all-->
+
+ 
+
+    <script src="../js/carrusel.js"></script>
+    <script src="../js/java.js"></script>
+    <script src="../js/contacto.js"></script>
+
+</body>
+</html>

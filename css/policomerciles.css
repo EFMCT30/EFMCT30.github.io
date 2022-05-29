@@ -1,0 +1,36 @@
+.container-policomer{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container-policomer .content{
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow:  0 0 20px -30px black;
+    border-radius: 10px;
+}
+
+.titulo-poli{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-decoration: underline
+}
+
+.lista{
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.container-policomer .content .nombre-empre{
+    margin-top:30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: black;
+}

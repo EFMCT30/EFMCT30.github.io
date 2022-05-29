@@ -1,0 +1,42 @@
+
+.container-terminos{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container-terminos .content{
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow:  0 0 20px -30px black;
+    border-radius: 10px;
+}
+
+.container-terminos .content .titulo-termi{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-decoration: underline
+}
+
+.container-terminos .content .subtitu-temi{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: underline
+}
+
+.container-terminos .content .nombre-empre{
+    margin-top:30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(170, 32, 32);
+}
+
+
+

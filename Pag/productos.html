@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PhoneHouses web - Productos</title>
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/Principal.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/Logo_Phonehouses.png">
+</head>
+<body>
+
+ 
+       <!--Header - menu-->
+        <header>
+
+            <div class="header-content">
+
+                <div class="logo">
+                    <h1>PHONE<b>HOUSES</b></h1>
+                </div>
+
+                <div class="menu" id="lateral">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html"> <i class="fas fa-home"></i>INICIO</a></li>
+                            <li><a href="Nosotros.html"><i class="fas fa-file-alt"></i>NOSOTROS</a></li>
+                            <li class="menu-selected"><a href="productos.html" class="text-menu-selected"><i class="fas fa-shopping-cart"></i>PRODUCTOS</a></li>
+                            <li><a href="contacto.html"><i class="fas fa-headset"></i>CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="ctn-icon-search">
+                    <i class="fas fa-search" id="icon-search"></i>
+                </div>
+
+                <div id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>    
+        </header>
+
+        <div id="ctn-bars-search">
+            <input type="text" id="inputSearch" placeholder="¿Qué celular estás buscando?">
+        </div>
+
+        <ul id="box-search">
+            <li><a href="productos.html"><i class="fas fa-search"></i>IPHONE</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>SAMSUNG</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>HUAWEI</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>XIAOMI</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>MOTOROLA</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>COMPLEMENTOS</a></li>
+            <li><a href="Nosotros.html"><i class="fas fa-search"></i>HISTORIA</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>PRODUCTOS</a></li>
+            <li><a href="Nosotros.html"><i class="fas fa-search"></i>NOSOTROS</a></li>
+            <li><a href="terminocondi.html"><i class="fas fa-search"></i>TÉRMINOS</a></li>
+            <li><a href="terminocondi.html"><i class="fas fa-search"></i>PRIVACIDAD</a></li>
+            <li><a href="libroRecla.html"><i class="fas fa-search"></i>LIBRO RECLAMACIONES</a></li>
+            <li><a href="../index.html"><i class="fas fa-search"></i>SERVICIOS</a></li>
+            <li><a href="../index.html"><i class="fas fa-search"></i>MARCAS</a></li>
+            <li><a href="garantia.html"><i class="fas fa-search"></i>GARANTIAS</a></li>
+            <li><a href="contacto.html"><i class="fas fa-search"></i>CONTACTO</a></li>
+            <li><a href="politicomerciales.html"><i class="fas fa-search"></i>POLÍTICAS</a></li>
+            <li><a href="contacto.html"><i class="fas fa-search"></i>CONTACTAR</a></li>
+            <li><a href="contacto.html"><i class="fas fa-search"></i>MENSAJE</a></li>
+            <li><a href="productos.html"><i class="fas fa-search"></i>CELULARES</a></li>
+        </ul>
+
+       <div id="cover-ctn-search"></div>
+
+        <div class="container-all" id="move-content">
+            
+            <!-------Portada--------->
+            <div class="container-cover">
+                <div class="container-info-cover">
+                    <h1>¡Un máximo rendimiento!</h1>
+                    <p>Con los mejores diapositvos moviles del mercado</p>
+                </div>
+            </div>
+
+            <!--container-carrito--->
+
+            <div class="container-carrito">
+            
+                <section class="shopping-cart">
+                    <div class="container">
+                        <h1 class="text-center">CARRITO</h1>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="shopping-cart-header">
+                                    <h6>PRODUCTO</h6>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="shopping-cart-header">
+                                    <h6 class="text-truncate">PRECIO</h6>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="shopping-cart-header">
+                                    <h6>CANTIDAD</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- inicio de adicionar productos al carrito -->
+                        <div class="shopping-cart-items shoppingCartItemsContainer">
+                        </div>
+                        <!--  fin de adicionar productos al carrito -->
+            
+                        <!-- total -->
+                        <div class="row totales">
+                            <div class="col-12">
+                                <div class="shopping-cart-total d-flex align-items-center">
+                                    <p class="mb-0 mb-1"><strong>TOTAL:</strong></p>
+                                    <p class="ml-4 mb-0 shoppingCartTotal">S/. 0.00</p>
+                                    <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                    data-target="#comprarModal">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- total -->
+                    </div>
+
+                </section>
+            </div>
+
+
+            <div class="container-cards">
+
+                <input type="radio" id="TODOS" name="Categorias" value="TODOS">
+                <input type="radio" id="APPLE" name="Categorias" value="APPLE">
+                <input type="radio" id="SAMSUNG" name="Categorias" value="SAMSUNG">
+                <input type="radio" id="HUAWEI" name="Categorias" value="HUAWEI">
+                <input type="radio" id="XIAOMI" name="Categorias" value="XIAOMI">
+                <input type="radio" id="MOTOROLA" name="Categorias" value="MOTOROLA">
+                <input type="radio" id="COMPLEMENTOS" name="Categorias" value="COMPLEMENTOS">
+
+                <div class="container-category">
+                    <label for="TODOS">TODOS</label>
+                    <label for="APPLE">APPLE</label>
+                    <label for="SAMSUNG">SAMSUNG</label>
+                    <label for="HUAWEI">HUAWEI</label>
+                    <label for="XIAOMI">XIAOMI</label>
+                    <label for="MOTOROLA">MOTOROLA</label>
+                    <label for="COMPLEMENTOS">COMPLEMENTOS</label>
+                </div> <!--container-category-->
+
+                <div class="cards" id="">
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE 12 64GB.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE 12</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>64 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 5099.99</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="2">Añadir al Carrito</button></a>
+                    </div><!--card-->
+                                
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE 11 PRO 64GB.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE 11 PRO</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>64 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3999.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="2">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE XS 256GB.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE XS</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>256 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 2349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="3">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE XR 256GB.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE XR</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>256 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 2149.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="4">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE X.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE X</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>256 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1049.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="5">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE 8 PLUS.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE 8 PLUS</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>64 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1599.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="6">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="APPLE">
+                        <div class="ctn-img">
+                        <img src="../img/IPHONE_img/IPHONE 7 128GB.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">IPHONE 7</h2>
+                        <ul class="ctn-tag">
+                            <li>Iphone</li>
+                            <li>128 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 749.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="7">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="SAMSUNG">
+                        <div class="ctn-img">
+                        <img src="../img/samsung/GALAXY A52S 5G .jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">GALAXY A52S 5G</h2>
+                        <ul class="ctn-tag">
+                            <li>Samsung</li>
+                            <li>128 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1949.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="8">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="SAMSUNG">
+                        <div class="ctn-img">
+                        <img src="../img/samsung/Galaxy M22.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">GALAXY M22</h2>
+                        <ul class="ctn-tag">
+                            <li>Samsung</li>
+                            <li>128 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 2749.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="8">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="SAMSUNG">
+                        <div class="ctn-img">
+                        <img src="../img/samsung/samsung s20.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">GALAXY S20</h2>
+                        <ul class="ctn-tag">
+                            <li>Samsung</li>
+                            <li>128 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 6749.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="8">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="SAMSUNG">
+                        <div class="ctn-img">
+                        <img src="../img/samsung/Galaxy S21 Ultra 5G.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">GALAXY S21 ULTRA 5G</h2>
+                        <ul class="ctn-tag">
+                            <li>Samsung</li>
+                            <li>128 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 5749.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="8">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="SAMSUNG">
+                        <div class="ctn-img">
+                        <img src="../img/samsung/Galaxy S21+ 5G.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">GALAXY S21 PRO 5G</h2>
+                        <ul class="ctn-tag">
+                            <li>Samsung</li>
+                            <li>128 GB</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 4599.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="8">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="HUAWEI">
+                        <div class="ctn-img">
+                        <img src="../img/Huawei_img/Huawei mate pro 30.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2>HUAWEI MATE 30 PRO</h2>
+                        <ul class="ctn-tag">
+                            <li>Huawei</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1327.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="9">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="HUAWEI">
+                        <div class="ctn-img">
+                        <img src="../img/huawei_img/HUAWEI P30.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">HUAWEI P30</h2>
+                        <ul class="ctn-tag">
+                            <li>Huawei</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1998.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="10">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="HUAWEI">
+                        <div class="ctn-img">
+                        <img src="../img/huawei_img/HUAWEI P40 PRO.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">HUAWEI P40 PRO</h2>
+                        <ul class="ctn-tag">
+                            <li>Huawei</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3909.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="11">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="HUAWEI">
+                        <div class="ctn-img">
+                        <img src="../img/huawei_img/HUAWEI P40.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">HUAWEI P40</h2>
+                        <ul class="ctn-tag">
+                            <li>Huawei</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1149.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="12">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="HUAWEI">
+                        <div class="ctn-img">
+                        <img src="../img/huawei_img/HUAWEI Y8s.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">HUAWEI Y8S</h2>
+                        <ul class="ctn-tag">
+                            <li>Huawei</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="13">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="HUAWEI">
+                        <div class="ctn-img">
+                        <img src="../img/huawei_img/HUAWEI Y9a.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">HUAWEI Y9A</h2>
+                        <ul class="ctn-tag">
+                            <li>Huawei</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1009.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="14">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="XIAOMI">
+                        <div class="ctn-img">
+                        <img src="../img/Xiaomi_img/Xiaomi Mi 11 Lite.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">XIAOMI MI 11 LITE</h2>
+                        <ul class="ctn-tag">
+                            <li>Xiaomi</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1199.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="15">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="XIAOMI">
+                        <div class="ctn-img">
+                        <img src="../img/Xiaomi_img/Xiaomi Poco M3 Pro.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">XIAOMI M3 PRO</h2>
+                        <ul class="ctn-tag">
+                            <li>Xiaomi</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 819.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="16">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="XIAOMI">
+                        <div class="ctn-img">
+                        <img src="../img/Xiaomi_img/Xiaomi Poco X3.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">XIAOMI POCO X3</h2>
+                        <ul class="ctn-tag">
+                            <li>Xiaomi</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 1299.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="17">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="XIAOMI">
+                        <div class="ctn-img">
+                        <img src="../img/Xiaomi_img/Xiaomi Redmi 10.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">XIAMO REDMI 10</h2>
+                        <ul class="ctn-tag">
+                            <li>Xiaomi</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 729.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="18">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="XIAOMI">
+                        <div class="ctn-img">
+                        <img src="../img/Xiaomi_img/Xiaomi Redmi 9.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">XIAOMI REDMI 9</h2>
+                        <ul class="ctn-tag">
+                            <li>Xiaomi</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 399.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="1">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="XIAOMI">
+                        <div class="ctn-img">
+                        <img src="../img/Xiaomi_img/Xiaomi Redmi Note 8.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">XIAOMI REDMI NOTE 8</h2>
+                        <ul class="ctn-tag">
+                            <li>Xiaomi</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 599.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="19">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="MOTOROLA">
+                        <div class="ctn-img">
+                        <img src="../img/MOTOROLA_img/moto e71.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">MOTO E71</h2>
+                        <ul class="ctn-tag">
+                            <li>Motorola</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="20">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="MOTOROLA">
+                        <div class="ctn-img">
+                        <img src="../img/MOTOROLA_img/Moto edge 20pro.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">MOTO EDGE 20 PRO</h2>
+                        <ul class="ctn-tag">
+                            <li>Motorola</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 2279.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="21">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="COMPLEMENTOS">
+                        <div class="ctn-img">
+                        <img src="../img/complementos/Au inalambricos sony 2.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">AUDÍFONO INALÁMBRICO HJ </h2>
+                        <ul class="ctn-tag">
+                            <li>bluetooh</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="22">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="COMPLEMENTOS">
+                        <div class="ctn-img">
+                        <img src="../img/complementos/Au inalambrficos.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">AUDÍFONO INALÁMBRICO XR</h2>
+                        <ul class="ctn-tag">
+                            <li>bluetooh</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="22">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="COMPLEMENTOS">
+                        <div class="ctn-img">
+                        <img src="../img/complementos/Au inalambricos sony.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">AUDÍFONO INALÁMBRICO SS</h2>
+                        <ul class="ctn-tag">
+                            <li>bluetooh</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="22">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="COMPLEMENTOS">
+                        <div class="ctn-img">
+                        <img src="../img/complementos/Au inalambricos 2.jpg" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">AUDÍFONO INALÁMBRICO SX</h2>
+                        <ul class="ctn-tag">
+                            <li>bluetooh</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="22">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                    <div class="card" data-category="COMPLEMENTOS">
+                        <div class="ctn-img">
+                        <img src="../img/complementos/movisun pro.png" alt="">
+                        </div><!--ctn-img-->
+                        <h2 class="titulo">AUDÍFONO MOVISUN</h2>
+                        <ul class="ctn-tag">
+                            <li>bluetooh</li>
+                        </ul>
+                        <img class="ctn-estre" src="../img/estrellas.png">
+                        <h6 class="precio">S/. 3349.00</h6>
+                        <a href="#"><button id="boton" class="agregar-carrito" data-id="22">Añadir al Carrito</button></a>
+                    </div><!--card-->
+
+                </div><!--cards-->
+
+            </div> <!--container-cards-->
+            
+            <!-------Boton------>
+            <div id="boton-up">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+
+            <!--Redes sociales--->
+            <div class="container-redes">
+                <a href="https://api.whatsapp.com/send?phone=+51971680273&text=Hola, vi esta publicación" target="_blank">
+                    <img src="../img/icon-whatsapp.png" title="Enviar Mensaje de WhatsApp"  alt="">
+                </a>
+            </div>
+
+            <!------Footer------->
+        <div class="container__footer">
+
+            <footer>
+                <div class="logo-footer">
+                    <br>
+                    <img src="../img/Logo_Phonehouses.png" alt="">
+                </div>
+
+                <div class="pri__container__footer">
+
+                    <div class="box__footer">
+                        <h2>SERVICIO AL CLIENTE</h2>
+                        <a href="../Pag/terminocondi.html">Términos y condiciones</a>
+                        <a href="../Pag/politicomerciales.html">Politicas Comerciales</a>
+                        <a href="../Pag/garantia.html">Garantía</a>
+                    </div>
+                    <div class="box__footer">
+                        <h2>COMPAÑIA</h2>
+                        <a href="../index.html">Inicio</a>
+                        <a href="../Pag/Nosotros.html">Nosotros</a>
+                        <a href="../Pag/productos.html">Productos</a>
+                        <a href="../Pag/contacto.html">Contacto</a>
+                        <a href="../Pag/terminocondi.html">Politica de privacidad</a>                                                   
+                    </div>
+
+                    <div class="box__footer">
+                        <h2>REDES SOCIALES</h2>
+                        <a href="https://es-la.facebook.com/" target="_Blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="https://twitter.com/iniciarsesion?lang=es" target="_Blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+                        <a href="https://www.linkedin.com/login/es" target="_Blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <a href="https://www.instagram.com/" target="_Blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+                    </div>
+
+                    <div class="box__footer">
+                        <h2>DATOS DE CONTACTO</h2>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. La Marina 1632 - San Miguel, Perú</p>
+                        <p><i class="fas fa-envelope"></i> PhoneHouse.pe@gmail.com</p>
+                        <p><i class="fas fa-envelope"></i> SoportePhoHouse.pe@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i><b> +51 971680273</b></p>
+                        <p><i class="fas fa-phone-alt"></i><b>  01 2633376</b></p>
+                        <img class="metodos-footer" src="../img/metodospagos_footer.png" alt="">
+                    </div>
+
+                </div><!--"pri-container-footer-->
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2021 <b>PhoneHouses</b></p>
+                </div>
+            </footer>
+       </div>
+
+        </div><!--container-all-->
+   
+
+ 
+
+    <script src="../js/java.js"></script>
+    <script src="../js/Carrito.js"></script>
+
+</body>
+</html>

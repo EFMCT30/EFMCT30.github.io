@@ -1,0 +1,33 @@
+
+/*---Medida de Servicio*/
+.container-garantia{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+} 
+
+.container-garantia .content{
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow:  0 0 20px -30px black;
+    border-radius: 10px;
+}
+
+.container-garantia .content .titulo-garantia{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-decoration: underline
+}
+
+.container-garantia .content .nombre-empre{
+    margin-top:30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(170, 32, 32);
+}
